@@ -61,7 +61,6 @@ router.post('/registerdata',function(req,res){
                 to: email,
                 subject : "Please confirm your Email account",
                 text : "Hello, Your otp is "+rand	
-                text : "Hello, Your otp is "+rand	''
               };
             transporter.sendMail(mailOptions, function(error, info){
                 if (error) {
