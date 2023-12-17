@@ -9,7 +9,7 @@ app.use('/css',express.static(__dirname + 'public/css'))
 
 // to display registration form 
 router.get('/register', function(req, res, next) {
-  res.render('registration-form.ejs');
+    res.render('registration-form.ejs');
 });
 
 

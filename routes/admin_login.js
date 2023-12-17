@@ -15,7 +15,7 @@ router.post('/adlogin', function(req, res){
     var emailAddress = req.body.email_address;
     var password = req.body.password;
 
-    var sql='SELECT * FROM registration WHERE email_address =? AND password =?';
+    var sql='SELECT * FROM administrator WHERE email_address =? AND password =?';
     db.query(sql, [emailAddress, password], function (err, data, fields) {
         if(err) throw err
         if(data.length>0){

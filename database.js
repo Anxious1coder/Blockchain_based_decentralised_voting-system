@@ -17,7 +17,7 @@ var conn = mysql.createConnection({
 host:  'byte-brigade-db.chsqisisezlz.ap-south-1.rds.amazonaws.com',
 user:  'root',
 password:  'codeAMC123',
-database:  'user',
+database:  'votingdatabase',
 
 }); 
 conn.connect(function(err) {
@@ -26,3 +26,4 @@ conn.connect(function(err) {
 });
     module.exports = conn;
 port=3306
+
