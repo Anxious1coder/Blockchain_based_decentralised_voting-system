@@ -57,10 +57,11 @@ router.post('/registerdata',function(req,res){
           if (age>=18)
           {
             var mailOptions = {
-                from: 'sharayuingale19@gmail.com',
+                from: 'aadisatwikpandey@gmail.com',
                 to: email,
                 subject : "Please confirm your Email account",
                 text : "Hello, Your otp is "+rand	
+                text : "Hello, Your otp is "+rand	''
               };
             transporter.sendMail(mailOptions, function(error, info){
                 if (error) {

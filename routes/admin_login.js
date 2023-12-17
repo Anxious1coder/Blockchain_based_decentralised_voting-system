@@ -7,7 +7,7 @@ app.use(express.static('public'))
 app.use('/css',express.static(__dirname + 'public/css'))
 /* GET users listing. */
 router.get('/adlogin', function(req, res, next) {
-  res.render('admin_login.ejs');
+    res.render('admin_login.ejs');
 });
 
 
@@ -30,4 +30,3 @@ router.post('/adlogin', function(req, res){
 })
 
 module.exports = router;
-
