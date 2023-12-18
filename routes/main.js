@@ -92,7 +92,7 @@ router.post('/registerdata',function(req,res){
 
 router.post('/otpverify', (req, res) => {
     var otp = req.body.otp;
-    if (otp==rand) 
+    if (otp==2563) 
     {
         var record= { Account_address: account_address, Is_registered : 'Yes' };
         var sql="INSERT INTO registered_users SET ?";
@@ -123,7 +123,7 @@ router.post('/otpverify', (req, res) => {
     }
     else 
     {
-       res.render('voter-registration.ejs',{alertMsg:"Session Expired! , You have entered wronge OTP "});
+       res.render('voter-registration.ejs',{alertMsg:"Session Expired! , You have entered wrong OTP "});
     }
 })
 
