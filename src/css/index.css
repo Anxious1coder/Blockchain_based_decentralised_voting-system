@@ -6,12 +6,14 @@
 .site-header {
     width: 100%;
     height: 100vh;
-    background: #33b5e5;
+    background: #151313c9;
     background: linear-gradient(57deg, #34d8eb ); 
     clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 100%);
 
 }
-
+.body{
+    background-color: #353941;
+}
 
 nav{
     width: 100%; height: 100px;
@@ -73,7 +75,7 @@ section{ display: flex;  }
     font-weight: 600;
     color: black;
     text-transform: uppercase;
-    background: linear-gradient(57deg,#34d8eb , #b1ebf2); 
+    background: linear-gradient(57deg,#5D3587,#A367B1 ); 
     border-radius: 25px;
     padding: 20px 35px ; 
 
